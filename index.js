@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 const config = require('config')
 
 app.get('/', (req, res)=>{
-    res.send('My Sample Node.js Application')
+    res.send('Sample Node.js Application')
 })
 
 app.get('/status', (req, res)=>{
