@@ -14,4 +14,5 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image to ECR...
+      - docker push 045291957223.dkr.ecr.ap-south-1.amazonaws.com/node-app:${CODEBUILD_BUILD_NUMBER}
       - docker push 045291957223.dkr.ecr.ap-south-1.amazonaws.com/node-app:dev
