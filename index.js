@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 const config = require('config')
 
 app.get('/', (req, res)=>{
-    res.send('Node.js Application, deployed through CI/CD Pipeline')
+    res.send('Node.js Application, deployed to ECS through CI/CD Pipeline')
 })
 
 app.get('/status', (req, res)=>{
